@@ -1,0 +1,37 @@
+/* Define keyframes for the color transition */
+/* Define the welcome-section styles */
+.welcome-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .welcome-section h1 {
+    font-size: 3em;
+    color: black; /* Set initial color */
+  }
+  
+
+/* Define keyframes for the color transition */
+@keyframes colorFlow {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+  }
+  
+ 
+  /* Define the welcome-section styles */
+  .welcome-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .welcome-section h1 {
+    font-size: 3em;
+  }
+  .first-letter{
+    color: blue;
+  }
+    

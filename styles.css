@@ -1,0 +1,169 @@
+/* Import fonts and define variables */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Raleway:wght@700&display=swap');
+
+:root {
+  /* Define color variables */
+  --main-white: #f0f0f0;
+  --main-red: #ff43ff;
+  --main-green: #aaffbb;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+/* General styles go here */
+/* General styles */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Reset styles */
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; /* Default font family */
+    font-size: 1.6rem; /* Base font size */
+    line-height: 1.6; /* Base line height */
+    background-color: var(--main-white); /* Default background color */
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif; /* Heading font family */
+    font-weight: 700; /* Heading font weight */
+  }
+  
+  p {
+    margin-bottom: 1.6rem; /* Default paragraph bottom margin */
+  }
+  
+  /* Links */
+  a {
+    color: var(--main-blue); /* Default link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--main-red); /* Link color on hover */
+  }
+  
+  /* Image */
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+  }
+  
+/* Navigation styles */
+.nav {
+    background-color: var(--main-red); /* Background color for the navigation bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    position: fixed; /* Fixed position to keep the navigation bar at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 1rem 2rem; /* Add padding to the navigation links */
+  }
+  
+  .nav-list li {
+    margin-left: 2rem; /* Add spacing between navigation items */
+  }
+  
+  .nav-list a {
+    color: var(--main-white); /* Text color */
+    font-size: 1.6rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .nav-list a:hover {
+    color: var(--main-blue); /* Change text color on hover */
+  }
+  
+/* Welcome section styles */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181719; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+  }
+  
+  .welcome-content {
+    max-width: 800px;
+    padding: 0 20px; /* Add padding to the content */
+
+  }
+  
+  .welcome-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  /* Projects section styles */
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+  }
+  
+  .projects-section-header {
+    color: var(--main-white);
+    font-size: 4.2rem;
+    margin-bottom: 6rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    overflow: hidden; /* Ensure images don't overflow */
+  }
+  
+  .project:hover .project-title {
+    color: #ff7f50; /* Change title color on hover */
+  }
+  
+  .project-image {
+    height: 250px; /* Limit project image height */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.1); /* Zoom in project image on hover */
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: var(--main-white);
+    transition: color 0.3s ease-in-out; /* Add transition effect */
+  }
+
+  
